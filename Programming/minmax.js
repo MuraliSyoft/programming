@@ -4,23 +4,19 @@
 // console.log(arr)
 // console.log(res[0], res[arr.length-1])
 
-function minmax(arr)
-{
+function minmax(arr) {
     let min = 0;
     let max = 0;
-    
-    for(let i=0; i<arr.length-1; i++)
-    {
-        if(arr[i] > max)
-        {
+
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > max) {
             max = arr[i]
         }
-        else if(arr[i] < min)
-        {
+        else if (arr[i] < min) {
             min = arr[i]
         }
     }
-    
+
     console.log(`min value is ${min} and max value is ${max}`)
 }
 
